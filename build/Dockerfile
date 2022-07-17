@@ -6,7 +6,7 @@ RUN apt-get update -qq
 
 FROM base as base_ansible
 RUN /usr/local/bin/python -m pip install ansible
-RUN apt-get install -y jq
+RUN apt-get install -y jq zsh git
 
 FROM base_ansible as base_ansible_deps
 
