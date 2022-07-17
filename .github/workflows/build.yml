@@ -103,7 +103,7 @@ jobs:
         run: |
           rc=0
           cd test
-          result=$(ansible-playbook test.yml -e 'ansible_become_pass=${{ secrets.ANSIBLE_BECOME_PASSWORD }}')
+          result=$(ansible-playbook test_ansible_vmware_connectivity.yml -e 'ansible_become_pass=${{ secrets.ANSIBLE_BECOME_PASSWORD }}')
           if [ $? -ne 0 ]; then
             rc=1
           fi
