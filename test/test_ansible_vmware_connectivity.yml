@@ -1,0 +1,16 @@
+---
+
+- name: Test the Ansible Container Build
+  hosts: ansible_syslog_node:&ansible_prod
+  become: yes
+
+  tasks:
+    - name: gather facts to demonstrate successful Ansible execution
+      ansible.builtin.setup:
+        gather_subset:
+          - all
+      register: test_facts
+
+    - name: output facts
+      ansible.builtin.debug:
+        msg: "test_facts {{ test_facts }}"

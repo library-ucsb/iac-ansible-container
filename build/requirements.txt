@@ -1,0 +1,18 @@
+requests >= 2.7
+pyvmomi
+
+## VMWare Dynamic Inventory Plugin
+setuptools
+git+https://github.com/vmware/vsphere-automation-sdk-python.git#vsphere-automation-sdk
+
+## Thycotic Secret Server requirements
+python-tss-sdk
+
+## ARA - ARA Records Ansible....
+ara
+
+jmespath
+cryptography
+
+botocore
+boto3
